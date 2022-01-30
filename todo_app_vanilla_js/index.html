@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>TODO APP (Vanilla JS)</title>
+</head>
+<body>
+  <div class="todo-wrapper">
+    <h2>Todo App (Vanilla JS version)</h2>
+    <div class="input-area">
+      <input placeholder="TODOを入力" class="input-area__input-box" />
+      <button class="input-area__button" onclick="onClickAdd()">追加</button>
+    </div>
+    <div class=incomplete-area>
+      <h3 class="incomplete-area__title">未完了のTODO</h3>
+      <ul class="incomplete-area__rows"></ul>
+    </div>
+    <div class="complete-area">
+      <h3 class="complete-area__title">完了したTODO</h3>
+      <ul class="complete-area__rows"></ul>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>
